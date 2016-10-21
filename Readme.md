@@ -12,7 +12,7 @@ The population per department has been taken from the PAHO website (http://ais.p
 
 ## Equations
 
-The set of equations have been modified from [Bertuzzo et al (2014)](http://link.springer.com/article/10.1007/s00477-014-0906-3). It is assumed that the reported cases in every department correspond to the newly infected <img src="http://latex.codecogs.com/svg.latex?\frac{dC}{dt}" border="0"/>. The system of equation can thus be reduced to one for the number of infected and one for the number of recovered, the number of susceptibles can be computed using the estimates of the total population:
+The set of equations have been modified from [Bertuzzo et al (2014)](http://link.springer.com/article/10.1007/s00477-014-0906-3). It is assumed that the reported cases in every department correspond to the newly infected <img src="http://latex.codecogs.com/svg.latex?\frac{dC}{dt}" border="0"/>. The system of equations can thus be reduced to one for the number of infected and one for the number of recovered, the number of susceptibles can be computed using the estimates of the total population:
 
 <img src="http://latex.codecogs.com/svg.latex?\frac{dR}{dt}=-(\rho+\mu)R+\gamma\,I+\frac{(1-\sigma)}{\sigma}\frac{dC}{dt}" border="0"/>
 

@@ -9,11 +9,14 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
     end
     
     if nargin<5
-        cbar=False;
+        cbar=false;
     end
 
-    shapefile='./Haiti_140_Communes_topology_corrected_3/Haiti_Communes_140_topology_corrected_3.shp';
+    shapefile='./shapefiles/Haiti_Communes_140_topology_corrected_3.shp';
     s=shaperead(shapefile);
+    shapefDept='./shapefiles/Haiti_140_Departements.shp';
+    sDept=shaperead(shapefDept);
+
     idx=zeros(size(s));
     
     if strcmp(aggregation,'dept')
@@ -46,7 +49,9 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
     
     densityColors = makesymbolspec('Polygon', {'data',cscale, 'FaceColor', viridis});
 
-    mapshow(ax ,s, 'DisplayType', 'polygon','SymbolSpec', densityColors)
+    mapshow(ax ,s, 'DisplayType', 'polygon','SymbolSpec', densityColors,'LineStyle','none')
+    hold on
+    mapshow(ax ,sDept, 'DisplayType', 'polygon','FaceColor','None')
     
     axis off
     
@@ -56,6 +61,6 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
         colorbar
     end
     
-    
+        
    
 end
