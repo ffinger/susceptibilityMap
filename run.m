@@ -63,10 +63,10 @@ for i=1:length(rho)
 
         %% plot
 
-        h=subaxis(length(sigma),length(rho),i+(j-1)*length(rho),'Spacing',0,'Padding',0,'Margin',0,'MarginRight',0.05);
+        h=subaxis(length(sigma),length(rho),i+(j-1)*length(rho),'Spacing',0,'Padding',0,'Margin',0,'MarginTop',0.02,'MarginLeft',0.02,'MarginRight',0.05);
         plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h)
         if j==1
-            text(0.5,1,num2str(imdur(i)),'Units','normalized')
+            text(0.5,1.1,num2str(imdur(i)),'Units','normalized')
         end
         if i==1
             text(0,0.5,num2str(sigma(j)),'Units','normalized')
