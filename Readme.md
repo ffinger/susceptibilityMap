@@ -12,7 +12,7 @@ The population per department has been taken from the PAHO website (http://ais.p
 
 ## Equations
 
-The set of equations have been modified from [Bertuzzo et al (2014)](http://link.springer.com/article/10.1007/s00477-014-0906-3). It is assumed that the reported cases in every model node correspond to the newly infected. The system of equation can thus be reduced to one for the number of infected and one for the number of recovered, the number of susceptibles can be computed using the estimates of the total population:
+The set of equations have been modified from [Bertuzzo et al (2014)](http://link.springer.com/article/10.1007/s00477-014-0906-3). It is assumed that the reported cases in every department correspond to the newly infected <img src="http://latex.codecogs.com/svg.latex?\frac{dC}{dt}" border="0"/>. The system of equation can thus be reduced to one for the number of infected and one for the number of recovered, the number of susceptibles can be computed using the estimates of the total population:
 
 <img src="http://latex.codecogs.com/svg.latex?\frac{dR}{dt}=-(\rho+\mu)R+\gamma\,I+\frac{(1-\sigma)}{\sigma}\frac{dC}{dt}" border="0"/>
 
@@ -30,4 +30,4 @@ The matlab code run.m explores the number of susceptibles at the end of Septembe
 
 ![alt text](result.png)
 
-The figure above shows the estimated proportion of susceptibles in each department (and Port-au-Prince) on the 25th September 2016 depending on the mean duration of acquired immunity (x-direction, in years) and the proportion of symptomatic (and thus reported) infections (y-direction). According to this estimate, significant proportions of immune people can only be present in certain areas of Haiti if the mean duration of immunity is quite high and if the proportion of symptomatically infected is low (e.g. many non-reported asymptomatic cases present who still acquire immunity). **Note that for those estimates a key assumption is that the average immunity duration for asymptomatics is as long as for symptomatics**.
+The figure above shows the estimated proportion of susceptibles in each department (and Port-au-Prince) on the 25th September 2016 depending on the mean duration of acquired immunity (x-direction, in years) and the proportion of symptomatic (and thus reported) infections (y-direction). According to this estimate, significant proportions of immune people can only be present in certain areas of Haiti if the mean duration of immunity is quite high and if the proportion of symptomatically infected is low (e.g. many non-reported asymptomatic cases present who still acquired immunity). **Note that for those estimates a key assumption is that the average immunity duration for asymptomatics is as long as for symptomatics**.
