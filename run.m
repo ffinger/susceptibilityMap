@@ -75,11 +75,14 @@ for i=1:length(rho)
     end
 end
 
-ax=subplot('position',[0.95,0.1,0.03,0.8]);
-axis off
+ax=subplot('position',[0.95,0.1,0.03,0.8],'visible','off');
 caxis(cscale)
 colormap(viridis)
 colorbar(ax,'location','east')
+
+ax=axes('position',[0,0,1,1],'visible','off');
+text(0.01,0.5,'proportion of symptomatics','Units','normalized','Rotation',90)
+text(0.5,0.99,'mean immunity duration','Units','normalized')
 
 %% save
 
