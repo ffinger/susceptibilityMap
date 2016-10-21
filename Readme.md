@@ -14,6 +14,6 @@ The population per department has been taken from the PAHO website (http://ais.p
 
 <img src="http://latex.codecogs.com/svg.latex?\frac{dR}{dt}=-(\rho+\mu)R+\gamma\,I+\frac{(1-\sigma)}{\sigma}\frac{dC}{dt}" border="0"/>
 
-<img src="http://latex.codecogs.com/svg.latex?\frac{dI}{dt}=\frac{dC}{dt} - (\gamma + \mu + \alpha) I" border="0"/>
+<img src="http://latex.codecogs.com/svg.latex?\frac{dI}{dt}=\frac{dC}{dt}-(\gamma+\mu+\alpha)\,I" border="0"/>
 
 <img src="http://latex.codecogs.com/svg.latex?S=H-R-I" border="0"/>
