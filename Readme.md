@@ -28,4 +28,4 @@ The average duration of acquired immunity <img src="http://latex.codecogs.com/sv
 
 The matlab code run.m explores the number of susceptibles at the end of September 2016 (last data point by MSSP on 25.09.2016) depending on the mean duration of acquired immunity and the proportion of symptomatic infections.
 
-![alt text](https://github.com/ffinger/susceptibilityMap/result.png)
+![alt text](result.png)
