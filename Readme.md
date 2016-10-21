@@ -29,3 +29,5 @@ The average duration of acquired immunity <img src="http://latex.codecogs.com/sv
 The matlab code run.m explores the number of susceptibles at the end of September 2016 (last data point by MSSP on 25.09.2016) depending on the mean duration of acquired immunity and the proportion of symptomatic infections.
 
 ![alt text](result.png)
+
+The figure above shows the estimated proportion of susceptibles in each department (and Port-au-Prince) on the 25th September 2016 depending on the mean duration of acquired immunity (x-direction, in years) and the proportion of symptomatic (and thus reported) infections (y-direction). According to this estimate, significant proportions of immune people can only be present in certain areas of Haiti if the mean duration of immunity is quite high and if the proportion of symptomatically infected is low (e.g. many non-reported asymptomatic cases present who still acquire immunity). **Note that for those estimates a key assumption is that the average immunity duration for asymptomatics is as long as for symptomatics**.
