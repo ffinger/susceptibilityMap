@@ -30,6 +30,11 @@ rho=1./(365*imdur);
 sigma=[0.05,0.1,0.15,0.2];
 
 fig=figure();
+fig.PaperUnits = 'centimeters';
+fig.Units = 'centimeters';
+fig.Position = [0 0 45 25];
+fig.PaperPosition = [0 0 45 25];
+
 cscale=[0,1];
 
 for i=1:length(rho)
@@ -77,3 +82,5 @@ colormap(viridis)
 colorbar(ax,'location','east')
 
 %% save
+
+print -dpng result.png
