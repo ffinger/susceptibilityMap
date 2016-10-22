@@ -9,19 +9,19 @@ For a description of the data and the equations used see below.
 ## Scenario 1: ignore asymptomatics
 Only symptomatically infected are assumed to acquire immunity. The spatial distribution of susceptibles at the end of September 2016 is explored depending on the mean immunity duration for symptomatically infected.
 
-!(result/result_scenario1.png)
+![resultImage](result/result_scenario1.png)
 
 ## Scenario 2: symptomatics and asymptomatics have the same immunity duration
 
 The figure shows the estimated proportion of susceptibles in each department (and Port-au-Prince) on the 25th September 2016 depending on the mean duration of acquired immunity (x-direction, in years) and the proportion of symptomatic (and thus reported) infections (y-direction). According to this estimate, significant proportions of immune people can only be present in certain areas of Haiti if the mean duration of immunity is quite high and if the proportion of symptomatically infected is low (e.g. many non-reported asymptomatic cases present who still acquired immunity). **Note that for those estimates a key assumption is that the average immunity duration for asymptomatics is as long as for symptomatics**.
 
-!(result_scenario2.png)
+![resultImage](result/result_scenario2.png)
 
 ## Scenario 3: asymptomatics have a different immunity duration than symptomatics
 
 In this scenario, the mean **immunity duration for symptomatically infected is set to 4 years**, and the proportion of susceptibles in each department is explored as a function of the mean immunity duration of asymptomatically infected (x-axis) and the proportion of symptomatic (and thus reported) infections over total infections (y-direction).
 
-!(result_scenario3.png)
+![resultImage](result/result_scenario3.png)
 
 ## Data
 Case data has been downloaded from the MSPP website over the years and extracted from the pdf files. The data consists of number of newly reported cases ("cas vus") per day.
