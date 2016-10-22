@@ -34,8 +34,8 @@ rho=1./(365*imdur);
 fig=figure();
 fig.PaperUnits = 'centimeters';
 fig.Units = 'centimeters';
-fig.Position = [0 0 50 4];
-fig.PaperPosition = [0 0 50 4];
+fig.Position = [0 0 50 6.5];
+fig.PaperPosition = [0 0 50 6.5];
 
 cscale=[.7,1];
 

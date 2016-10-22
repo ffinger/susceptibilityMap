@@ -7,7 +7,7 @@ The code could easily be adapted to smaller administrative units if the case dat
 For a description of the data and the equations used see below.
 
 ## Scenario 1: ignore asymptomatics
-Only symptomatically infected are assumed to acquire immunity. The spatial distribution of susceptibles at the end of September 2016 is explored depending on the mean immunity duration for symptomatically infected.
+Only symptomatically infected are assumed to acquire immunity. The spatial distribution of susceptibles at the end of September 2016 is explored depending on the mean immunity duration for symptomatically infected. The color in the figure below shows the proportion of susceptibles in the entire population.
 
 ![resultImage](result/result_scenario1.png)
 
