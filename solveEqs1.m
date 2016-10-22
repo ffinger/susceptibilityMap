@@ -1,4 +1,4 @@
-function [t,y]=solveEqs(dCdt,par,nnodes,tspan,y0)
+function [t,y]=solveEqs1(dCdt,par,nnodes,tspan,y0)
 
     % I(timestep,node) = y(timestep,1:2:end)
     % R(timestep,node) = y(timestep,2:2:end)
