@@ -1,6 +1,6 @@
 # Estimation of the percentage of population susceptible
 
-The matlab code "run.m" estimates the percentage of susceptible people in each Haitian department based on the case data published by the Ministry of Health (MSPP) between October 2010 and September 2016. Port-au-Prince is considered separate from Ouest and consists of the communes 'Carrefour', 'Cite Soleil','Delmas','Kenscoff','Petion-Ville','Port-au-Prince','Tabarre'.
+The matlab code "run.m" estimates the percentage of people susceptible to cholera (as opposed to immune) in each Haitian department based on the case data published by the Ministry of Health (MSPP) between October 2010 and September 2016. Port-au-Prince is considered separate from Ouest and consists of the communes 'Carrefour', 'Cite Soleil','Delmas','Kenscoff','Petion-Ville','Port-au-Prince','Tabarre'.
 
 The code could easily be adapted to smaller administrative units if the case data for those units was available.
 
