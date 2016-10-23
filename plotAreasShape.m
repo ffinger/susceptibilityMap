@@ -1,4 +1,4 @@
-function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
+function plotAreasShape(data,names,aggregation,cscale,cbar,ax,cmp)
  
     if nargin==3
         cscale=[min(data),max(data)];
@@ -11,6 +11,10 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
     if nargin<5
         cbar=false;
     end
+    
+    if nargin<6
+        cmp=viridis;
+    end    
 
     shapefile='./shapefiles/Haiti_Communes_140_topology_corrected_3.shp';
     s=shaperead(shapefile);
@@ -47,7 +51,7 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
         s(i).data=data(idx(i));
     end
     
-    densityColors = makesymbolspec('Polygon', {'data',cscale, 'FaceColor', viridis});
+    densityColors = makesymbolspec('Polygon', {'data',cscale, 'FaceColor', cmp});
 
     mapshow(ax ,s, 'DisplayType', 'polygon','SymbolSpec', densityColors,'LineStyle','none')
     hold on
@@ -57,7 +61,7 @@ function plotAreasShape(data,names,aggregation,cscale,cbar,ax)
     
     if cbar
         caxis(cscale)
-        colormap(viridis)
+        colormap(cmp)
         colorbar
     end
     

@@ -37,7 +37,7 @@ fig.Units = 'centimeters';
 fig.Position = [0 0 50 6.5];
 fig.PaperPosition = [0 0 50 6.5];
 
-cscale=[.7,1];
+cscale=[0.7,1];
 
 for i=1:length(rho)
     
@@ -65,22 +65,20 @@ for i=1:length(rho)
 
     h=subaxis(1,length(rho),i,'Spacing',0,'Padding',0,'Margin',0,'MarginTop',0.02,'MarginLeft',0.02,'MarginRight',0.05);
     
-    plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h)
+    plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h,inferno)
     text(0.5,0.88,num2str(imdur(i)),'Units','normalized')        
 end
 
 ax=subplot('position',[0.95,0.1,0.03,0.8],'visible','off');
 caxis(cscale)
-colormap(viridis)
+colormap(inferno)
 colorbar(ax,'location','east')
 
 ax=axes('position',[0,0,1,1],'visible','off');
 text(0.4,0.95,'mean immunity duration','Units','normalized')
 
 % save
-
 print -dpng result/result_scenario1.png
-
 
 %% second scenario: symptomatics and asymptomatics have the same immunity duration
 
@@ -123,7 +121,7 @@ for i=1:length(rho)
         % plot
 
         h=subaxis(length(sigma),length(rho),i+(j-1)*length(rho),'Spacing',0,'Padding',0,'Margin',0,'MarginTop',0.02,'MarginLeft',0.02,'MarginRight',0.05);
-        plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h)
+        plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h,viridis)
         if j==1
             text(0.5,1.0,num2str(imdur(i)),'Units','normalized')
         end
@@ -193,7 +191,7 @@ for i=1:length(rho)
         % plot
 
         h=subaxis(length(sigma),length(rho),i+(j-1)*length(rho),'Spacing',0,'Padding',0,'Margin',0,'MarginTop',0.02,'MarginLeft',0.02,'MarginRight',0.05);
-        plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h)
+        plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h,viridis)
         if j==1
             text(0.5,1.0,num2str(imdur(i)),'Units','normalized')
         end
