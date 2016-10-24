@@ -46,7 +46,7 @@ For Scenario 3, a set of equation with a separate category for asymptomatic reco
 
 <img src="http://latex.codecogs.com/svg.latex?\frac{dR_S}{dt}=-(\rho_S+\mu)R_S+\gamma\,I" border="0"/>
 
-<img src="http://latex.codecogs.com/svg.latex?\frac{dR_A}{dt}=-(\rho_A+\mu)R_A\frac{(1-\sigma)}{\sigma}\frac{dC}{dt}" border="0"/>
+<img src="http://latex.codecogs.com/svg.latex?\frac{dR_A}{dt}=-(\rho_A+\mu)R_A+\frac{(1-\sigma)}{\sigma}\frac{dC}{dt}" border="0"/>
 
 <img src="http://latex.codecogs.com/svg.latex?\frac{dI}{dt}=\frac{dC}{dt}-(\gamma+\mu+\alpha)\,I" border="0"/>
 
