@@ -6,6 +6,8 @@ The code could easily be adapted to smaller administrative units if the case dat
 
 For a description of the data and the equations used see below.
 
+In the context of this analysis, an asymptomatic person is defined as a person having cholera but symptoms are not severe enough that they get reported. In addition, this also includes under-reporting.
+
 ## Scenario 1: ignore asymptomatics
 Only symptomatically infected are assumed to acquire immunity. The spatial distribution of susceptibles at the end of September 2016 is explored depending on the mean immunity duration for symptomatically infected. The color in the figure below shows the proportion of susceptibles in the entire population.
 
