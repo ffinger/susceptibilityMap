@@ -4,7 +4,7 @@ addpath utilities;
 
 %% load case data
 
-load data/casedata_new_Sept2016
+load data/casedata_Sept2016
 caseData=cases_with_PaP; %has to be nnodes x ndates
 datesCases=date_cases; %has to be ndates x 1
 [ndates,~]=size(datesCases);
