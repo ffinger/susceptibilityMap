@@ -39,6 +39,8 @@ fig.PaperPosition = [0 0 50 6.5];
 
 cscale=[0.7,1];
 
+percSuscept=[];
+
 for i=1:length(rho)
     
     %parameters to vary:
@@ -67,7 +69,12 @@ for i=1:length(rho)
     
     plotAreasShape(S(end,:)./H',names,'dept+pap',cscale,false,h,inferno)
     text(0.5,0.88,num2str(imdur(i)),'Units','normalized')        
+
+    percSuscept(i,:)=S(end,:)./H';
 end
+
+%save by rho,dept
+save('result/scenario1.mat','percSuscept','names');
 
 ax=subplot('position',[0.95,0.1,0.03,0.8],'visible','off');
 caxis(cscale)
@@ -93,6 +100,8 @@ fig.Position = [0 0 50 30];
 fig.PaperPosition = [0 0 50 30];
 
 cscale=[0,1];
+
+percSuscept=[];
 
 for i=1:length(rho)
     for j=1:length(sigma)
@@ -129,8 +138,15 @@ for i=1:length(rho)
             text(0,0.5,num2str(sigma(j)),'Units','normalized')
         end
         
+
+        percSuscept(i,j,:)=S(end,:)./H';
+
     end
 end
+
+%save by rho,sigma,dept
+save('result/scenario2.mat','percSuscept','names')
+
 
 ax=subplot('position',[0.95,0.1,0.03,0.8],'visible','off');
 caxis(cscale)
@@ -160,6 +176,8 @@ fig.Position = [0 0 50 30];
 fig.PaperPosition = [0 0 50 30];
 
 cscale=[0,1];
+
+percSuscept=[];
 
 for i=1:length(rho)
     for j=1:length(sigma)
@@ -199,8 +217,14 @@ for i=1:length(rho)
             text(0,0.5,num2str(sigma(j)),'Units','normalized')
         end
         
+        percSuscept(i,j,:)=S(end,:)./H';
+
     end
 end
+
+%save by rho,sigma,dept
+save('result/scenario3.mat','percSuscept','names')
+
 
 ax=subplot('position',[0.95,0.1,0.03,0.8],'visible','off');
 caxis(cscale)
